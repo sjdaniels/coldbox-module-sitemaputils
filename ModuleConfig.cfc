@@ -12,7 +12,12 @@ component {
 	}
 
 	function onLoad() {
+		var settings = controller.getConfigSettings();
 		parseParentSettings();
+
+		var distPath = expandpath(settings.sitemaputils.dist);
+		if (!directoryExists(distPath))
+			directoryCreate(distPath);
 	}
 
 	private function parseParentSettings(){
