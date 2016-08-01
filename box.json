@@ -1,0 +1,32 @@
+{
+    "name":"XMl Sitemap Generation Utils",
+    "version":"1.0.0+0001",
+    "author":"Sean Daniels <sdaniels@padawan.net>",
+    "homepage":"https://github.com/sjdaniels/coldbox-module-sitemaputils",
+    "documentation":"https://github.com/sjdaniels/coldbox-module-sitemaputils/blob/master/README.md",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/sjdaniels/coldbox-module-sitemaputils.git"
+    },
+    "slug":"sitemaputils",
+    "shortDescription":"Helpers for building XML sitemaps",
+    "type":"modules",
+    "packageDirectory":"sitemaputils",
+    "keywords":[
+        "sitemaps",
+        "google"
+    ],
+    "private":true,
+    "engines":[
+        {
+            "type":"lucee",
+            "version":">4.5"
+        },
+        {
+            "type":"adobe",
+            "version":">9.02"
+        }
+    ],
+    "dependencies":{
+    }
+}
