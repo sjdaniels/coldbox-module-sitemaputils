@@ -21,7 +21,9 @@ component {
 			}
 		}
 
-		closeSiteMap(local.map);
+		if (!isnull(local.map))
+			closeSiteMap(local.map);
+		
 		return mapsCreated;
 	} 
 
