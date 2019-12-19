@@ -31,7 +31,7 @@ component {
 		var path = "#settings.dist#/#filename#.xml";
 		var result = fileopen(expandpath(path), "write", "utf-8");
 		filewriteline(result, '<?xml version="1.0" encoding="UTF-8"?>');
-		filewriteline(result, '<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">');
+		filewriteline(result, '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
 		
 		mapsCreated.append(path);
 
