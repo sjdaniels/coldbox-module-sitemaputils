@@ -1,6 +1,6 @@
 component {
 
-	property name="settings" inject="coldbox:setting:sitemaputils";
+	property name="settings" inject="coldbox:modulesettings:sitemaputils";
 
 	string function create(required string fileName, required array sitemapURLs, any urlFilterClosure) {
 		var path = "#settings.dist#/#filename#.xml";

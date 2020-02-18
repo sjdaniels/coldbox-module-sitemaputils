@@ -1,6 +1,6 @@
 component {
 
-	property name="settings" inject="coldbox:setting:sitemaputils";
+	property name="settings" inject="coldbox:modulesettings:sitemaputils";
 
 	array function create(required string prefix, required array urls) {
 		var ii = 1;
