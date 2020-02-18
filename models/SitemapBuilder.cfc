@@ -28,6 +28,9 @@ component {
 	} 
 
 	private any function openSiteMap(required string fileName, required array mapsCreated) {
+		if (!directoryExists(settings.dist))
+			directoryCreate(settings.dist);
+		
 		var path = "#settings.dist#/#filename#.xml";
 		var result = fileopen(expandpath(path), "write", "utf-8");
 		filewriteline(result, '<?xml version="1.0" encoding="UTF-8"?>');
