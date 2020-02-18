@@ -14,7 +14,7 @@ component {
 	function configure(){
 		settings = {
 			// The path to sitemap distribution, relative to parent app root
-			 "dist" : "/assets/dist/sitemaps"
+			 "dist" : "assets/dist/sitemaps"
 			// Base HREF for URLs in sitemaps
 			,"basehref" : "http#cgi.server_port_secure?'s':''#://#cgi.server_name#"
 			// Max number of URLs to include per sitemap
