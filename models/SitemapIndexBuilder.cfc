@@ -3,8 +3,8 @@ component {
 	property name="settings" inject="coldbox:modulesettings:sitemaputils";
 
 	string function create(required string fileName, required array sitemapURLs, any urlFilterClosure) {
-		if (!directoryExists(settings.dist))
-			directoryCreate(settings.dist);
+		if (!directoryExists(expandpath(settings.dist)))
+			directoryCreate(expandpath(settings.dist));
 
 		var path = "#settings.dist#/#filename#.xml";
 		var myIndex = fileopen(expandpath(path), "write", "utf-8");
